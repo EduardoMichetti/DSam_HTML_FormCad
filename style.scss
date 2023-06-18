@@ -64,10 +64,29 @@ html, body {
             width: 90%;
             margin: auto;
             margin-bottom: 20px;
-            background-color: black;
+            
+
+            input {
+                width: 100%;
+                height: 50%;
+                padding: 20px;
+                border-radius: 10px;
+                background-color: $brancoVerde;
+                border: none;
+                outline: none;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 300;
+
+                &:active {
+                    border: 2px solid $verde;
+                }
+                &:focus {
+                    border: 2px solid $verde;
+                }
+            }
         }
 
-        background-color: red;
+        
     }
 }
 
