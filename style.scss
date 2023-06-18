@@ -4,6 +4,7 @@
 $azul: #0077FF;
 $branco: #FFFFFF;
 $verde: #098171;
+$verdeEscuro: #056659;
 $brancoVerde: #F8F7EE;
 $marrom: #333333;
 $laranja: #FF9306;
@@ -84,9 +85,33 @@ html, body {
                     border: 2px solid $verde;
                 }
             }
+
+            button {
+                width: 140px;
+                height: 40px;
+                background-color: $verde;
+                border: none;
+                color: $branco;
+                border-radius: 10px;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 500;
+
+                &:hover {
+                    background-color: $verdeEscuro;                    
+                }
+                &:active {
+                    background-color: $verdeEscuro;                    
+                }
+            }
         }
 
-        
+        .margin-auto {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+        }        
     }
 }
 
