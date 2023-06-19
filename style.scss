@@ -120,7 +120,8 @@ html, body {
 
 // criando responsividade
 @media only screen and (min-width: $desktop) {
-
+//acredito que alguns estilos aqui não seriam necessário repetir pois tem os mesmos atributos
+//... dos declarados anteriormente, como por exemplo, input e button
     .grid {
         display: grid;
         grid-template-columns: 50% 50%;
@@ -138,6 +139,18 @@ html, body {
             width: 100%;
             height: 100%;
             background-color: $verde;
+
+            h1 {
+                font-size: 1.5rem;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 500;                
+            }
+
+            i {
+                font-size: 3rem;
+                margin-bottom: 20px;
+            }
+            
         }
 
         .formulario {
@@ -148,7 +161,73 @@ html, body {
             height: 100%;
             grid-row: 1;
             grid-column: 2;
+            .title {
+                display: block;
+                width: 90%;
+                margin: auto;
+                margin-bottom: 30px;
+            
+                h1 {
+                    font-size: 1.6rem;
+                    color: $laranja;
+                    text-align: center;
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: 700;
+                }
+            }
+
+            .form-group {
+                width: 90%;
+                margin: auto;
+                margin-bottom: 20px;
+
+                input {
+                    width: 100%;
+                    height: 50%;
+                    padding: 20px;
+                    border-radius: 10px;
+                    background-color: $brancoVerde;
+                    border: none;
+                    outline: none;
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: 300;
+    
+                    &:active {
+                        border: 2px solid $verde;
+                    }
+                    &:focus {
+                        border: 2px solid $verde;
+                    }
+                }
+    
+                button {
+                    width: 140px;
+                    height: 40px;
+                    background-color: $verde;
+                    border: none;
+                    color: $branco;
+                    border-radius: 10px;
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: 500;
+    
+                    &:hover {
+                        background-color: $verdeEscuro;                    
+                    }
+                    &:active {
+                        background-color: $verdeEscuro;                    
+                    }
+                }
+            }
+
+            .margin-auto {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                margin-top: 30px;
+            }        
         }
+
     }
 }
 
